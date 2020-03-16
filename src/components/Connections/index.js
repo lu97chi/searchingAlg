@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ConectionLine } from './styled'
+import Material from 'random-material-color';
 import { statesCordinates } from '../../data'
 
 const getLeftCordinates = (current, codesData) => {
@@ -36,7 +37,7 @@ const Conections = () => {
       <ConectionLine width='1450px' height='1000px'>
         {lines.map(line =>
           line.map(({ x1, x2, y1, y2 }, j) => (
-            <line x1={x1} y1={y1} x2={x2} y2={y2} stroke='#FFFFFF' />
+            <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={Material.getColor()} />
           ))
         )}
       </ConectionLine>

@@ -34,7 +34,7 @@ export const StateContainer = styled.div`
     align-items: center;
     font-size: 20px;
     text-align: center;
-    background: rgb(175, 216, 248);
+    background: ${({color})=> color};
     top: ${({top}) => top};
     left: ${({left}) => left};
     z-index: 15;
