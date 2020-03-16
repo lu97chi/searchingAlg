@@ -37,6 +37,7 @@ export const StateContainer = styled.div`
     background: rgb(175, 216, 248);
     top: ${({top}) => top};
     left: ${({left}) => left};
+    z-index: 15;
     &:hover{
         animation: ${Visited} 1.5s linear forwards;
     }
